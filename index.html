@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -34,7 +32,7 @@
 <body class="font-inter bg-gray-50 dark:bg-darkgray text-gray-800 dark:text-gray-200">
     <!-- Navigation -->
     <nav class="fixed w-full bg-white/80 dark:bg-darkgray/80 backdrop-blur-md z-50 shadow-sm">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="container mx-auto px-6 md:px-4 py-4 md:py-3 flex justify-between items-center">
             <a href="#inicio" class="text-xl font-bold gradient-text">CZ</a>
             
             <div class="hidden md:flex space-x-6">
@@ -60,23 +58,23 @@
         
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-md">
-            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
-                <a href="#inicio" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Início</a>
-                <a href="#sobre" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Sobre</a>
-                <a href="#experiencia" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Experiência</a>
-                <a href="#formacao" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Formação</a>
-                <a href="#projetos" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Projetos</a>
-                <a href="#cursos" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Cursos</a>
-                <a href="#contato" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Contato</a>
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="#inicio" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Início</a>
+                <a href="#sobre" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Sobre</a>
+                <a href="#experiencia" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Experiência</a>
+                <a href="#formacao" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Formação</a>
+                <a href="#projetos" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Projetos</a>
+                <a href="#cursos" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Cursos</a>
+                <a href="#contato" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Contato</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="min-h-screen flex items-center pt-20 pb-16">
-        <div class="container mx-auto px-4 section-fade">
+    <section id="inicio" class="min-h-screen flex items-center pt-24 md:pt-20 pb-20 md:pb-16">
+        <div class="container mx-auto px-6 md:px-4 section-fade">
             <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="md:w-1/2 mb-12 md:mb-0">
                     <div class="relative w-64 h-64 mx-auto">
                         <div class="absolute inset-0 rounded-full bg-gradient-to-r from-neonpurple to-neonred opacity-20 blur-lg"></div>
                         <div class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
@@ -84,20 +82,20 @@
                         </div>    </div>
                 </div>
                 <div class="md:w-1/2 text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-6 md:mb-4 leading-tight">
                         Carlos Vinicius <span class="gradient-text">Garcia Zanonato</span>
                     </h1>
-                    <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">
+                    <h2 class="text-lg md:text-2xl text-gray-600 dark:text-gray-400 mb-8 md:mb-6">
                         Estudante de Sistemas de Informação & Pesquisador
                     </h2>
-                    <p class="text-lg mb-8 max-w-lg mx-auto md:mx-0">
+                    <p class="text-base md:text-lg mb-10 md:mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed px-4 md:px-0">
                         Olá, sou Carlos Vinicius Garcia Zanonato — estudante de Sistemas de Informação, pesquisador por natureza, apaixonado por tecnologia, biociências e Inteligência Artificial. Este é meu espaço profissional onde compartilho minhas experiências e formação.
                     </p>
                     <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                        <a href="#contato" class="px-6 py-3 bg-neonpurple hover:bg-opacity-90 text-white rounded-full transition shadow-lg hover:shadow-xl">
+                        <a href="#contato" class="px-8 py-4 md:px-6 md:py-3 bg-neonpurple hover:bg-opacity-90 text-white rounded-full transition shadow-lg hover:shadow-xl text-sm md:text-base">
                             Entre em contato
                         </a>
-                        <a href="#sobre" class="px-6 py-3 border border-neonpurple text-neonpurple hover:bg-neonpurple hover:text-white rounded-full transition">
+                        <a href="#sobre" class="px-8 py-4 md:px-6 md:py-3 border border-neonpurple text-neonpurple hover:bg-neonpurple hover:text-white rounded-full transition text-sm md:text-base">
                             Saiba mais
                         </a>
                     </div>
@@ -107,88 +105,88 @@
     </section>
 
     <!-- About Section -->
-    <section id="sobre" class="py-20 bg-gray-100 dark:bg-gray-900">
-        <div class="container mx-auto px-4 section-fade">
-            <h2 class="text-3xl font-bold text-center mb-16">Informações Pessoais & Resumo</h2>
+    <section id="sobre" class="py-24 md:py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-6 md:px-4 section-fade">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-20 md:mb-16 px-4">Informações Pessoais & Resumo</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
                 <!-- Personal Info -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover">
-                    <h3 class="text-2xl font-semibold mb-6 gradient-text">Informações Pessoais</h3>
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8 card-hover mx-4 md:mx-0">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-8 md:mb-6 gradient-text">Informações Pessoais</h3>
                     
-                    <div class="space-y-4">
+                    <div class="space-y-6 md:space-y-4">
                         <div class="flex items-start">
-                            <div class="text-neonpurple mr-4">
+                            <div class="text-neonpurple mr-4 md:mr-4">
                                 <i class="fas fa-user text-xl"></i>
                             </div>
-                            <div>
-                                <h4 class="font-medium">Nome Completo</h4>
-                                <p class="text-gray-600 dark:text-gray-400">Carlos Vinicius Garcia Zanonato</p>
+                            <div class="flex-1">
+                                <h4 class="font-medium mb-1">Nome Completo</h4>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base">Carlos Vinicius Garcia Zanonato</p>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="text-neonpurple mr-4">
+                            <div class="text-neonpurple mr-4 md:mr-4">
                                 <i class="fas fa-map-marker-alt text-xl"></i>
                             </div>
-                            <div>
-                                <h4 class="font-medium">Localização</h4>
-                                <p class="text-gray-600 dark:text-gray-400">Restinga Sêca, Rio Grande do Sul, Brasil</p>
+                            <div class="flex-1">
+                                <h4 class="font-medium mb-1">Localização</h4>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base">Restinga Sêca, Rio Grande do Sul, Brasil</p>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="text-neonpurple mr-4">
+                            <div class="text-neonpurple mr-4 md:mr-4">
                                 <i class="fas fa-envelope text-xl"></i>
                             </div>
-                            <div>
-                                <h4 class="font-medium">Email</h4>
-                                <a href="mailto:viniciuszanona@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition">viniciuszanona@gmail.com</a>
+                            <div class="flex-1">
+                                <h4 class="font-medium mb-1">Email</h4>
+                                <a href="mailto:viniciuszanona@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition text-sm md:text-base break-all">viniciuszanona@gmail.com</a>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="text-neonpurple mr-4">
+                            <div class="text-neonpurple mr-4 md:mr-4">
                                 <i class="fab fa-linkedin text-xl"></i>
                             </div>
-                            <div>
-                                <h4 class="font-medium">LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition">carlos-vinicius-garcia-zanonato</a>
+                            <div class="flex-1">
+                                <h4 class="font-medium mb-1">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition text-sm md:text-base break-all">carlos-vinicius-garcia-zanonato</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Professional Summary -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover">
-                    <h3 class="text-2xl font-semibold mb-6 gradient-text">Resumo Profissional</h3>
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8 card-hover mx-4 md:mx-0">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-8 md:mb-6 gradient-text">Resumo Profissional</h3>
                     
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                    <p class="text-gray-600 dark:text-gray-400 mb-10 md:mb-8 leading-relaxed text-sm md:text-base">
                         Sou acadêmico de Sistemas de Informação com 3 anos de experiência em pesquisa científica e laboratório biológico na Unipampa. Tenho grande interesse em Virologia, Engenharia Genética e Microbiologia, áreas que aprofundei com cursos complementares. Busco integrar tecnologia e ciências biológicas para criar soluções inovadoras. Atualmente, concilio minha formação em SI e com essa paixão pela pesquisa e por Inteligência Artificial. Possuo inglês intermediário, boa comunicação e motivação por novos desafios.
                     </p>
                     
-                    <h4 class="text-xl font-semibold mb-4">Principais Competências</h4>
+                    <h4 class="text-lg md:text-xl font-semibold mb-6 md:mb-4">Principais Competências</h4>
                     
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
-                            <div class="text-neonpurple text-3xl mb-2">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-4">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 md:p-4 rounded-lg text-center">
+                            <div class="text-neonpurple text-3xl mb-3 md:mb-2">
                                 <i class="fas fa-microscope"></i>
                             </div>
-                            <h5 class="font-medium">Pesquisador por Natureza</h5>
+                            <h5 class="font-medium text-sm md:text-base">Pesquisador por Natureza</h5>
                         </div>
                         
-                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
-                            <div class="text-neonpurple text-3xl mb-2">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 md:p-4 rounded-lg text-center">
+                            <div class="text-neonpurple text-3xl mb-3 md:mb-2">
                                 <i class="fas fa-brain"></i>
                             </div>
-                            <h5 class="font-medium">Pensamento Analítico</h5>
+                            <h5 class="font-medium text-sm md:text-base">Pensamento Analítico</h5>
                         </div>
                         
-                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
-                            <div class="text-neonpurple text-3xl mb-2">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-6 md:p-4 rounded-lg text-center">
+                            <div class="text-neonpurple text-3xl mb-3 md:mb-2">
                                 <i class="fas fa-bolt"></i>
                             </div>
-                            <h5 class="font-medium">Aprendizado Rápido</h5>
+                            <h5 class="font-medium text-sm md:text-base">Aprendizado Rápido</h5>
                         </div>
                     </div>
                 </div>
