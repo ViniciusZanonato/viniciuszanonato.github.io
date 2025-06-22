@@ -1,0 +1,765 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Vinicius Garcia Zanonato | Currículo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkgray: '#1E1E1E',
+                        neonpurple: '#9D4EDD',
+                        neonred: '#FF2E63',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+
+        // Force dark mode always
+        document.documentElement.classList.add('dark')
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-50 dark:bg-darkgray text-gray-800 dark:text-gray-200">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 dark:bg-darkgray/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#inicio" class="text-xl font-bold gradient-text">CZ</a>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Início</a>
+                <a href="#sobre" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Sobre</a>
+                <a href="#experiencia" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Experiência</a>
+                <a href="#formacao" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Formação</a>
+                <a href="#projetos" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Projetos</a>
+                <a href="#cursos" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Cursos</a>
+                <a href="#contato" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Contato</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-neonpurple dark:hover:text-neonpurple transition">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-md">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#inicio" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Início</a>
+                <a href="#sobre" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Sobre</a>
+                <a href="#experiencia" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Experiência</a>
+                <a href="#formacao" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Formação</a>
+                <a href="#projetos" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Projetos</a>
+                <a href="#cursos" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Cursos</a>
+                <a href="#contato" class="py-2 hover:text-neonpurple dark:hover:text-neonpurple transition">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="min-h-screen flex items-center pt-20 pb-16">
+        <div class="container mx-auto px-4 section-fade">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="relative w-64 h-64 mx-auto">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-r from-neonpurple to-neonred opacity-20 blur-lg"></div>
+                        <div class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+                            <img src="images/fotocurriculo.png" alt="Foto de Carlos Vinicius Garcia Zanonato" class="w-full h-full object-cover rounded-full">
+                        </div>    </div>
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                        Carlos Vinicius <span class="gradient-text">Garcia Zanonato</span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">
+                        Estudante de Sistemas de Informação & Pesquisador
+                    </h2>
+                    <p class="text-lg mb-8 max-w-lg mx-auto md:mx-0">
+                        Olá, sou Carlos Vinicius Garcia Zanonato — estudante de Sistemas de Informação, pesquisador por natureza, apaixonado por tecnologia, biociências e Inteligência Artificial. Este é meu espaço profissional onde compartilho minhas experiências e formação.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#contato" class="px-6 py-3 bg-neonpurple hover:bg-opacity-90 text-white rounded-full transition shadow-lg hover:shadow-xl">
+                            Entre em contato
+                        </a>
+                        <a href="#sobre" class="px-6 py-3 border border-neonpurple text-neonpurple hover:bg-neonpurple hover:text-white rounded-full transition">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-4 section-fade">
+            <h2 class="text-3xl font-bold text-center mb-16">Informações Pessoais & Resumo</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Personal Info -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover">
+                    <h3 class="text-2xl font-semibold mb-6 gradient-text">Informações Pessoais</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-neonpurple mr-4">
+                                <i class="fas fa-user text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Nome Completo</h4>
+                                <p class="text-gray-600 dark:text-gray-400">Carlos Vinicius Garcia Zanonato</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-neonpurple mr-4">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Localização</h4>
+                                <p class="text-gray-600 dark:text-gray-400">Restinga Sêca, Rio Grande do Sul, Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-neonpurple mr-4">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <a href="mailto:viniciuszanona@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition">viniciuszanona@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-neonpurple mr-4">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition">carlos-vinicius-garcia-zanonato</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Summary -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 card-hover">
+                    <h3 class="text-2xl font-semibold mb-6 gradient-text">Resumo Profissional</h3>
+                    
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                        Sou acadêmico de Sistemas de Informação com 3 anos de experiência em pesquisa científica e laboratório biológico na Unipampa. Tenho grande interesse em Virologia, Engenharia Genética e Microbiologia, áreas que aprofundei com cursos complementares. Busco integrar tecnologia e ciências biológicas para criar soluções inovadoras. Atualmente, concilio minha formação em SI e com essa paixão pela pesquisa e por Inteligência Artificial. Possuo inglês intermediário, boa comunicação e motivação por novos desafios.
+                    </p>
+                    
+                    <h4 class="text-xl font-semibold mb-4">Principais Competências</h4>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                            <div class="text-neonpurple text-3xl mb-2">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <h5 class="font-medium">Pesquisador por Natureza</h5>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                            <div class="text-neonpurple text-3xl mb-2">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h5 class="font-medium">Pensamento Analítico</h5>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg text-center">
+                            <div class="text-neonpurple text-3xl mb-2">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h5 class="font-medium">Aprendizado Rápido</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="py-20">
+        <div class="container mx-auto px-4 section-fade">
+            <h2 class="text-3xl font-bold text-center mb-16">Experiência Profissional</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Line -->
+                    <div class="absolute left-0 md:left-1/2 transform md:translate-x-[-50%] h-full w-1 bg-gradient-to-b from-neonpurple to-neonred"></div>
+                    
+                    <!-- Experience 1 -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
+                                <h3 class="text-xl font-semibold mb-2">Antonio Meneghetti Faculdade</h3>
+                                <p class="text-neonpurple font-medium">Gestão de Indicadores & Dev Sales (Representante de Desenvolvimento de Vendas)</p>
+                                <p class="text-gray-600 dark:text-gray-400">Março de 2025 – Presente</p>
+                                <p class="text-gray-600 dark:text-gray-400">Restinga Sêca, RS</p>
+                            </div>
+                            
+                            <div class="absolute left-0 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonpurple flex items-center justify-center">
+                                <i class="fas fa-briefcase text-neonpurple"></i>
+                            </div>
+                            
+                            <div class="md:w-1/2 md:pl-12">
+                                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover">
+                                    <p class="text-gray-600 dark:text-gray-400">
+                                        Estágio focado na gestão e análise de indicadores institucionais e desenvolvimento de vendas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-1 md:order-1">
+                                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md md:ml-auto card-hover">
+                                    <p class="text-gray-600 dark:text-gray-400">
+                                        Responsável pelo controle e gestão do almoxarifado, garantindo o abastecimento adequado de materiais.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="absolute left-0 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonred flex items-center justify-center order-2">
+                                <i class="fas fa-boxes text-neonred"></i>
+                            </div>
+                            
+                            <div class="md:w-1/2 md:pl-12 order-3 md:order-3">
+                                <h3 class="text-xl font-semibold mb-2">Auto Pratense</h3>
+                                <p class="text-neonred font-medium">Almoxarife</p>
+                                <p class="text-gray-600 dark:text-gray-400">Junho de 2023 – Dezembro de 2024</p>
+                                <p class="text-gray-600 dark:text-gray-400">Bento Gonçalves, RS</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="relative">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
+                                <h3 class="text-xl font-semibold mb-2">Unipampa – Laboratório de Biologia</h3>
+                                <p class="text-neonpurple font-medium">Menor Aprendiz como Auxiliar de Laboratório</p>
+                                <p class="text-gray-600 dark:text-gray-400">Junho de 2018 – Dezembro de 2020</p>
+                                <p class="text-gray-600 dark:text-gray-400">Itaqui, RS</p>
+                            </div>
+                            
+                            <div class="absolute left-0 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonpurple flex items-center justify-center">
+                                <i class="fas fa-flask text-neonpurple"></i>
+                            </div>
+                            
+                            <div class="md:w-1/2 md:pl-12">
+                                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover">
+                                    <p class="text-gray-600 dark:text-gray-400">
+                                        Auxiliou em pesquisas científicas e na manutenção do laboratório biológico, adquirindo experiência prática em técnicas laboratoriais.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="formacao" class="py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-4 section-fade">
+            <h2 class="text-3xl font-bold text-center mb-16">Formação Acadêmica</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Education 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-24 bg-gradient-to-r from-neonpurple to-neonred flex items-center justify-center relative overflow-hidden">
+                        <img src="images/LogoAMF.png" alt="Logo Antonio Meneghetti Faculdade" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Antonio Meneghetti Faculdade</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Bacharelado em Tecnologia da Informação/Sistemas de Informação</p>
+                        <div class="flex items-center text-gray-500 dark:text-gray-400">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>Janeiro de 2025 - Cursando (2° semestre)</span>
+                        </div>
+                        <div class="mt-4 bg-purple-100 dark:bg-purple-900/30 p-3 rounded-lg">
+                            <p class="text-purple-800 dark:text-purple-300 text-sm flex items-center">
+                                <i class="fas fa-trophy mr-2"></i>
+                                <span>Participante do CodeRace 2025 na Antonio Meneghetti Faculdade</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-24 bg-gradient-to-r from-neonred to-neonpurple flex items-center justify-center relative overflow-hidden">
+                        <img src="images/LogoOsvaldo.jpg" alt="Logo Escola Osvaldo Cruz" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">I.E.E Osvaldo Cruz</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Ensino Médio</p>
+                        <div class="flex items-center text-gray-500 dark:text-gray-400">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>Janeiro de 2019 – Dezembro de 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="py-20">
+        <div class="container mx-auto px-4 section-fade">
+            <h2 class="text-3xl font-bold text-center mb-16">Projetos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Project 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-40 bg-gradient-to-br from-neonpurple to-neonred flex items-center justify-center relative overflow-hidden">
+                        <img src="images/LogoZion.png" alt="Logo ZION" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-3xl font-bold text-white drop-shadow-lg">ZION 0.5v</h3>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <i class="fab fa-github text-white text-2xl drop-shadow-lg"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex space-x-2">
+                                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-xs font-medium">IA</span>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">Python</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Projeto de inteligência artificial com foco em processamento de linguagem natural e assistência virtual.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/ViniciusZanonato/ZION" target="_blank" class="text-neonpurple hover:text-neonred transition flex items-center">
+                                <span>Ver no GitHub</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-40 bg-gradient-to-br from-neonred to-neonpurple flex items-center justify-center relative overflow-hidden">
+                        <img src="images/LogoNeuroLearn.png" alt="Logo NeuroLearn" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-3xl font-bold text-white drop-shadow-lg">NeuroLearn</h3>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <i class="fab fa-github text-white text-2xl drop-shadow-lg"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex space-x-2">
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-xs font-medium">Educação</span>
+                                <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 rounded-full text-xs font-medium">JavaScript</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Plataforma de aprendizado com foco em neurociência e técnicas de estudo eficientes para estudantes.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://github.com/ViniciusZanonato/25-control-amizade" target="_blank" class="text-neonpurple hover:text-neonred transition flex items-center">
+                                <span>Ver no GitHub</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://github.com/ViniciusZanonato" target="_blank" class="inline-flex items-center px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full transition">
+                    <i class="fab fa-github mr-2"></i>
+                    <span>Ver mais projetos no GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="py-20 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-4 section-fade">
+            <h2 class="text-3xl font-bold text-center mb-16">Cursos e Certificações</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Course 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-neonpurple text-3xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Bioinformática</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-3">Udemy</p>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm">
+                        <i class="fas fa-certificate mr-2"></i>
+                        <span>Análise de sequências genéticas</span>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-neonpurple text-3xl mb-4">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Microbiologia</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-3">Udemy</p>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm">
+                        <i class="fas fa-certificate mr-2"></i>
+                        <span>Técnicas laboratoriais e culturas microbianas</span>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-neonpurple text-3xl mb-4">
+                        <i class="fas fa-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Virologia</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-3">Udemy</p>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm">
+                        <i class="fas fa-certificate mr-2"></i>
+                        <span>Ciclo viral e infecções humanas</span>
+                    </div>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-neonpurple text-3xl mb-4">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Engenharia Genética</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-3">Udemy</p>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm">
+                        <i class="fas fa-certificate mr-2"></i>
+                        <span>CRISPR e edição de genes</span>
+                    </div>
+                </div>
+                
+                <!-- Course 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-neonpurple text-3xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Inteligência Artificial para Iniciantes</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-3">Udemy</p>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm">
+                        <i class="fas fa-certificate mr-2"></i>
+                        <span>Conceitos, aplicações e ética</span>
+                    </div>
+                </div>
+                
+                <!-- Course 6 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-neonpurple text-3xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Curso de HTML e CSS</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-3">Antonio Meneghetti Faculdade</p>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm">
+                        <i class="fas fa-certificate mr-2"></i>
+                        <span>Desenvolvimento Web</span>
+                    </div>
+                </div>
+                
+                <!-- Course 7 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-neonpurple text-3xl mb-4">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Curso de Python Básico</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-3">Curso Online</p>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm">
+                        <i class="fas fa-certificate mr-2"></i>
+                        <span>Programação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20">
+        <div class="container mx-auto px-4 section-fade">
+            <h2 class="text-3xl font-bold text-center mb-16">Entre em Contato</h2>
+            
+            <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-gradient-to-br from-neonpurple to-neonred p-8 text-white flex flex-col items-center justify-center">
+                        <h3 class="text-2xl font-semibold mb-6 text-center">Informações de Contato</h3>
+                        
+                        <div class="space-y-6 w-full">
+                            <div class="flex items-center justify-center">
+                                <div class="mr-4 text-2xl">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="font-medium">Email</h4>
+                                    <a href="mailto:viniciuszanona@gmail.com" class="text-white hover:text-gray-200 transition break-all">viniciuszanona@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-center">
+                                <div class="mr-4 text-2xl">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="font-medium">Localização</h4>
+                                    <p>Restinga Sêca, RS, Brasil</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-center">
+                                <div class="mr-4 text-2xl">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="font-medium">LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-white hover:text-gray-200 transition">Perfil LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nome</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Assunto</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Mensagem</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-neonpurple to-neonred text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                                    Enviar Mensagem
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+                            Mensagem enviada com sucesso! Entraremos em contato em breve.
+                        </div>
+                        
+                        <div id="form-error" class="hidden mt-4 p-4 bg-red-100 text-red-700 rounded-lg">
+                            Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-950 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold gradient-text mb-2">Carlos Vinicius Garcia Zanonato</h2>
+                    <p class="text-gray-400">Estudante de Sistemas de Informação & Pesquisador</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#inicio" class="hover:text-neonpurple transition">Início</a>
+                        <a href="#experiencia" class="hover:text-neonpurple transition">Experiência</a>
+                        <a href="#formacao" class="hover:text-neonpurple transition">Formação</a>
+                        <a href="#projetos" class="hover:text-neonpurple transition">Projetos</a>
+                        <a href="#contato" class="hover:text-neonpurple transition">Contato</a>
+                    </div>
+                    
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-gray-400 hover:text-neonpurple transition">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://github.com/ViniciusZanonato" target="_blank" class="text-gray-400 hover:text-neonpurple transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                    
+                    <p class="text-gray-400 text-sm">
+                        &copy; <span id="current-year"></span> Carlos Vinicius Garcia Zanonato. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 p-3 bg-neonpurple text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-opacity-90">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Dark mode is always enabled (no toggle needed)
+        
+        // Scroll animation
+        const sections = document.querySelectorAll('.section-fade');
+        
+        const fadeInOnScroll = () => {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (sectionTop < windowHeight * 0.85) {
+                    section.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', fadeInOnScroll);
+        window.addEventListener('load', fadeInOnScroll);
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Contact form with EmailJS
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+        const formError = document.getElementById('form-error');
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Hide any previous messages
+            formSuccess.classList.add('hidden');
+            formError.classList.add('hidden');
+            
+            // Change button state
+            const originalButtonText = submitButton.textContent;
+            submitButton.textContent = 'Enviando...';
+            submitButton.disabled = true;
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Create mailto link as fallback
+            const mailtoLink = `mailto:viniciuszanona@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                `Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${message}`
+            )}`;
+            
+            try {
+                // Open mailto link (this will open the user's default email client)
+                window.location.href = mailtoLink;
+                
+                // Show success message
+                formSuccess.classList.remove('hidden');
+                contactForm.reset();
+                
+                // Hide success message after 7 seconds
+                setTimeout(() => {
+                    formSuccess.classList.add('hidden');
+                }, 7000);
+            } catch (error) {
+                console.error('Erro:', error);
+                formError.classList.remove('hidden');
+                
+                // Hide error message after 7 seconds
+                setTimeout(() => {
+                    formError.classList.add('hidden');
+                }, 7000);
+            } finally {
+                // Reset button state
+                submitButton.textContent = originalButtonText;
+                submitButton.disabled = false;
+            }
+        });
+        
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Adjust for fixed header
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
