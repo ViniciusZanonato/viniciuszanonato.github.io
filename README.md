@@ -10,7 +10,7 @@
 
 Currículo online moderno e responsivo desenvolvido para apresentar minha trajetória profissional, formação acadêmica e projetos. O site foi construído com foco em design elegante, experiência do usuário e performance otimizada.
 
-🔗 **[Ver Site Online](https://viniciuszanonato.github.io)** *(substitua pela URL quando hospedar)*
+🔗 **[Ver Site Online](https://viniciuszanonato.github.io)**
 
 ## ✨ Características
 
