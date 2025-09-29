@@ -883,15 +883,17 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Certificate Modal -->
-    <div id="certificate-modal"
-        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50 hidden">
-        <div class="relative bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl max-w-4xl max-h-[90vh] overflow-auto">
-            <button id="close-modal"
-                class="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">&times;</button>
-            <img id="certificate-modal-image" src="" alt="" class="max-w-full max-h-[80vh] object-contain mx-auto">
-        </div>
-    </div>
+<!-- Certificate Modal -->
+<div id="certificate-modal"
+     class="fixed inset-0 hidden items-center justify-center bg-black/60 z-50">
+  <div id="certificate-dialog"
+       class="relative bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl max-w-4xl max-h-[90vh] overflow-auto
+              transform transition-all duration-300 ease-out opacity-0 scale-95">
+    <button id="close-modal"
+            class="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">&times;</button>
+    <img id="certificate-modal-image" src="" alt="" class="max-w-full max-h-[80vh] object-contain mx-auto">
+  </div>
+</div>
 
 <script>
   // ========== Mobile menu ==========
