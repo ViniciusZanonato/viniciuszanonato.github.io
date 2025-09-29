@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,41 +31,48 @@
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="font-inter bg-gray-50 dark:bg-darkgray text-gray-800 dark:text-gray-200">
     <!-- Navigation -->
     <nav class="fixed w-full bg-white/80 dark:bg-darkgray/80 backdrop-blur-md z-50 shadow-sm">
         <div class="container mx-auto px-6 md:px-4 py-4 md:py-3 flex justify-between items-center">
             <a href="#inicio" class="text-xl font-bold gradient-text">CZ</a>
-            
+
             <div class="hidden md:flex space-x-6">
                 <a href="#inicio" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Início</a>
                 <a href="#sobre" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Sobre</a>
-                <a href="#experiencia" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Experiência</a>
+                <a href="#experiencia"
+                    class="hover:text-neonpurple dark:hover:text-neonpurple transition">Experiência</a>
                 <a href="#formacao" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Formação</a>
                 <a href="#projetos" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Projetos</a>
                 <a href="#cursos" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Cursos</a>
                 <a href="#contato" class="hover:text-neonpurple dark:hover:text-neonpurple transition">Contato</a>
             </div>
-            
+
             <div class="flex items-center space-x-4">
-                <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-neonpurple dark:hover:text-neonpurple transition">
+                <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank"
+                    class="text-gray-600 dark:text-gray-300 hover:text-neonpurple dark:hover:text-neonpurple transition">
                     <i class="fab fa-linkedin text-xl"></i>
                 </a>
-                
-                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+
+                <button id="mobile-menu-button"
+                    class="md:hidden p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
-        
+
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-md">
             <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
                 <a href="#inicio" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Início</a>
                 <a href="#sobre" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Sobre</a>
-                <a href="#experiencia" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Experiência</a>
-                <a href="#formacao" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Formação</a>
-                <a href="#projetos" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Projetos</a>
+                <a href="#experiencia"
+                    class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Experiência</a>
+                <a href="#formacao"
+                    class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Formação</a>
+                <a href="#projetos"
+                    class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Projetos</a>
                 <a href="#cursos" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Cursos</a>
                 <a href="#contato" class="py-3 hover:text-neonpurple dark:hover:text-neonpurple transition">Contato</a>
             </div>
@@ -77,10 +85,15 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-12 md:mb-0">
                     <div class="relative w-64 h-64 mx-auto">
-                        <div class="absolute inset-0 rounded-full bg-gradient-to-r from-neonpurple to-neonred opacity-20 blur-lg"></div>
-                        <div class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
-                            <img src="images/fotocurriculo.png" alt="Foto de Carlos Vinicius Garcia Zanonato" class="w-full h-full object-cover rounded-full">
-                        </div>    </div>
+                        <div
+                            class="absolute inset-0 rounded-full bg-gradient-to-r from-neonpurple to-neonred opacity-20 blur-lg">
+                        </div>
+                        <div
+                            class="absolute inset-0 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+                            <img src="images/fotocurriculo.png" alt="Foto de Carlos Vinicius Garcia Zanonato"
+                                class="w-full h-full object-cover rounded-full">
+                        </div>
+                    </div>
                 </div>
                 <div class="md:w-1/2 text-center md:text-left">
                     <h1 class="text-3xl md:text-5xl font-bold mb-6 md:mb-4 leading-tight">
@@ -90,13 +103,17 @@
                         Estudante de Sistemas de Informação & Pesquisador
                     </h2>
                     <p class="text-base md:text-lg mb-10 md:mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed px-4 md:px-0">
-                        Olá, sou Carlos Vinicius Garcia Zanonato — estudante de Sistemas de Informação, pesquisador por natureza, apaixonado por tecnologia, biociências e Inteligência Artificial. Este é meu espaço profissional onde compartilho minhas experiências e formação.
+                        Olá, sou Carlos Vinicius Garcia Zanonato — estudante de Sistemas de Informação, pesquisador por
+                        natureza, apaixonado por tecnologia, biociências e Inteligência Artificial. Este é meu espaço
+                        profissional onde compartilho minhas experiências e formação.
                     </p>
                     <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                        <a href="#contato" class="px-8 py-4 md:px-6 md:py-3 bg-neonpurple hover:bg-opacity-90 text-white rounded-full transition shadow-lg hover:shadow-xl text-sm md:text-base">
+                        <a href="#contato"
+                            class="px-8 py-4 md:px-6 md:py-3 bg-neonpurple hover:bg-opacity-90 text-white rounded-full transition shadow-lg hover:shadow-xl text-sm md:text-base">
                             Entre em contato
                         </a>
-                        <a href="#sobre" class="px-8 py-4 md:px-6 md:py-3 border border-neonpurple text-neonpurple hover:bg-neonpurple hover:text-white rounded-full transition text-sm md:text-base">
+                        <a href="#sobre"
+                            class="px-8 py-4 md:px-6 md:py-3 border border-neonpurple text-neonpurple hover:bg-neonpurple hover:text-white rounded-full transition text-sm md:text-base">
                             Saiba mais
                         </a>
                     </div>
@@ -108,13 +125,14 @@
     <!-- About Section -->
     <section id="sobre" class="py-24 md:py-20 bg-gray-100 dark:bg-gray-900">
         <div class="container mx-auto px-6 md:px-4 section-fade">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-20 md:mb-16 px-4">Informações Pessoais & Resumo</h2>
-            
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-20 md:mb-16 px-4">Informações Pessoais & Resumo
+            </h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
                 <!-- Personal Info -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8 card-hover mx-4 md:mx-0">
                     <h3 class="text-xl md:text-2xl font-semibold mb-8 md:mb-6 gradient-text">Informações Pessoais</h3>
-                    
+
                     <div class="space-y-6 md:space-y-4">
                         <div class="flex items-start">
                             <div class="text-neonpurple mr-4 md:mr-4">
@@ -122,52 +140,62 @@
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-medium mb-1">Nome Completo</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base">Carlos Vinicius Garcia Zanonato</p>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base">Carlos Vinicius Garcia
+                                    Zanonato</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="text-neonpurple mr-4 md:mr-4">
                                 <i class="fas fa-map-marker-alt text-xl"></i>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-medium mb-1">Localização</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base">Restinga Sêca, Rio Grande do Sul, Brasil</p>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base">Restinga Sêca, Rio
+                                    Grande do Sul, Brasil</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="text-neonpurple mr-4 md:mr-4">
                                 <i class="fas fa-envelope text-xl"></i>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-medium mb-1">Email</h4>
-                                <a href="mailto:viniciuszanona@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition text-sm md:text-base break-all">viniciuszanona@gmail.com</a>
+                                <a href="mailto:viniciuszanona@gmail.com"
+                                    class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition text-sm md:text-base break-all">viniciuszanona@gmail.com</a>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="text-neonpurple mr-4 md:mr-4">
                                 <i class="fab fa-linkedin text-xl"></i>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-medium mb-1">LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition text-sm md:text-base break-all">carlos-vinicius-garcia-zanonato</a>
+                                <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346"
+                                    target="_blank"
+                                    class="text-gray-600 dark:text-gray-400 hover:text-neonpurple dark:hover:text-neonpurple transition text-sm md:text-base break-all">carlos-vinicius-garcia-zanonato</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Professional Summary -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8 card-hover mx-4 md:mx-0">
                     <h3 class="text-xl md:text-2xl font-semibold mb-8 md:mb-6 gradient-text">Resumo Profissional</h3>
-                    
+
                     <p class="text-gray-600 dark:text-gray-400 mb-10 md:mb-8 leading-relaxed text-sm md:text-base">
-                        Sou acadêmico de Sistemas de Informação com 3 anos de experiência em pesquisa científica e laboratório biológico na Unipampa. Tenho grande interesse em Virologia, Engenharia Genética e Microbiologia, áreas que aprofundei com cursos complementares. Busco integrar tecnologia e ciências biológicas para criar soluções inovadoras. Atualmente, concilio minha formação em SI e com essa paixão pela pesquisa e por Inteligência Artificial. Possuo inglês intermediário, boa comunicação e motivação por novos desafios.
+                        Sou acadêmico de Sistemas de Informação com 3 anos de experiência em pesquisa científica e
+                        laboratório biológico na Unipampa. Tenho grande interesse em Virologia, Engenharia Genética e
+                        Microbiologia, áreas que aprofundei com cursos complementares. Busco integrar tecnologia e
+                        ciências biológicas para criar soluções inovadoras. Atualmente, concilio minha formação em SI e
+                        com essa paixão pela pesquisa e por Inteligência Artificial. Possuo inglês intermediário, boa
+                        comunicação e motivação por novos desafios.
                     </p>
-                    
+
                     <h4 class="text-lg md:text-xl font-semibold mb-6 md:mb-4">Principais Competências</h4>
-                    
+
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-4">
                         <div class="bg-gray-50 dark:bg-gray-700 p-6 md:p-4 rounded-lg text-center">
                             <div class="text-neonpurple text-3xl mb-3 md:mb-2">
@@ -175,21 +203,21 @@
                             </div>
                             <h5 class="font-medium text-sm md:text-base">Pesquisador por Natureza</h5>
                         </div>
-                        
+
                         <div class="bg-gray-50 dark:bg-gray-700 p-6 md:p-4 rounded-lg text-center">
                             <div class="text-neonpurple text-3xl mb-3 md:mb-2">
                                 <i class="fas fa-brain"></i>
                             </div>
                             <h5 class="font-medium text-sm md:text-base">Pensamento Analítico</h5>
                         </div>
-                        
+
                         <div class="bg-gray-50 dark:bg-gray-700 p-6 md:p-4 rounded-lg text-center">
                             <div class="text-neonpurple text-3xl mb-3 md:mb-2">
                                 <i class="fas fa-comments"></i>
                             </div>
                             <h5 class="font-medium text-sm md:text-base">Comunicação Eloquente</h5>
                         </div>
-                        
+
                         <div class="bg-gray-50 dark:bg-gray-700 p-6 md:p-4 rounded-lg text-center">
                             <div class="text-neonpurple text-3xl mb-3 md:mb-2">
                                 <i class="fas fa-bolt"></i>
@@ -206,13 +234,15 @@
     <section id="experiencia" class="py-24 md:py-20">
         <div class="container mx-auto px-6 md:px-4 section-fade">
             <h2 class="text-2xl md:text-3xl font-bold text-center mb-20 md:mb-16 px-4">Experiência Profissional</h2>
-            
+
             <div class="max-w-3xl mx-auto">
                 <!-- Timeline -->
                 <div class="relative">
                     <!-- Line -->
-                    <div class="absolute left-6 md:left-1/2 transform md:translate-x-[-50%] h-full w-1 bg-gradient-to-b from-neonpurple to-neonred"></div>
-                    
+                    <div
+                        class="absolute left-6 md:left-1/2 transform md:translate-x-[-50%] h-full w-1 bg-gradient-to-b from-neonpurple to-neonred">
+                    </div>
+
                     <!-- Experience 1 - Primeira experiência (mais antiga) -->
                     <div class="relative mb-20 md:mb-16">
                         <div class="flex flex-col md:flex-row items-start md:items-center">
@@ -220,15 +250,18 @@
                             <div class="md:hidden w-full pl-16">
                                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover mb-4">
                                     <h3 class="text-lg font-semibold mb-2">Unipampa – Laboratório de Biologia</h3>
-                                    <p class="text-neonpurple font-medium mb-2 text-sm">Menor Aprendiz como Auxiliar de Laboratório</p>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">Junho de 2018 – Dezembro de 2020</p>
+                                    <p class="text-neonpurple font-medium mb-2 text-sm">Menor Aprendiz como Auxiliar de
+                                        Laboratório</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">Junho de 2018 – Dezembro de
+                                        2020</p>
                                     <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Itaqui, RS</p>
                                     <p class="text-gray-600 dark:text-gray-400 text-sm">
-                                        Auxiliou em pesquisas científicas e na manutenção do laboratório biológico, adquirindo experiência prática em técnicas laboratoriais.
+                                        Auxiliou em pesquisas científicas e na manutenção do laboratório biológico,
+                                        adquirindo experiência prática em técnicas laboratoriais.
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <!-- Desktop Layout -->
                             <div class="hidden md:block md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
                                 <h3 class="text-xl font-semibold mb-2">Unipampa – Laboratório de Biologia</h3>
@@ -236,21 +269,23 @@
                                 <p class="text-gray-600 dark:text-gray-400">Junho de 2018 – Dezembro de 2020</p>
                                 <p class="text-gray-600 dark:text-gray-400">Itaqui, RS</p>
                             </div>
-                            
-                            <div class="absolute left-1 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonpurple flex items-center justify-center">
+
+                            <div
+                                class="absolute left-1 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonpurple flex items-center justify-center">
                                 <i class="fas fa-flask text-neonpurple"></i>
                             </div>
-                            
+
                             <div class="hidden md:block md:w-1/2 md:pl-12">
                                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover">
                                     <p class="text-gray-600 dark:text-gray-400">
-                                        Auxiliou em pesquisas científicas e na manutenção do laboratório biológico, adquirindo experiência prática em técnicas laboratoriais.
+                                        Auxiliou em pesquisas científicas e na manutenção do laboratório biológico,
+                                        adquirindo experiência prática em técnicas laboratoriais.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Experience 2 - Segunda experiência -->
                     <div class="relative mb-20 md:mb-16">
                         <div class="flex flex-col md:flex-row items-start md:items-center">
@@ -259,27 +294,32 @@
                                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover mb-4">
                                     <h3 class="text-lg font-semibold mb-2">Auto Pratense</h3>
                                     <p class="text-neonred font-medium mb-2 text-sm">Almoxarife</p>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">Junho de 2023 – Dezembro de 2024</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">Junho de 2023 – Dezembro de
+                                        2024</p>
                                     <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Bento Gonçalves, RS</p>
                                     <p class="text-gray-600 dark:text-gray-400 text-sm">
-                                        Responsável pelo controle e gestão do almoxarifado, garantindo o abastecimento adequado de materiais.
+                                        Responsável pelo controle e gestão do almoxarifado, garantindo o abastecimento
+                                        adequado de materiais.
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <!-- Desktop Layout -->
-                            <div class="hidden md:block md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-1 md:order-1">
+                            <div
+                                class="hidden md:block md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-1 md:order-1">
                                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md md:ml-auto card-hover">
                                     <p class="text-gray-600 dark:text-gray-400">
-                                        Responsável pelo controle e gestão do almoxarifado, garantindo o abastecimento adequado de materiais.
+                                        Responsável pelo controle e gestão do almoxarifado, garantindo o abastecimento
+                                        adequado de materiais.
                                     </p>
                                 </div>
                             </div>
-                            
-                            <div class="absolute left-1 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonred flex items-center justify-center order-2">
+
+                            <div
+                                class="absolute left-1 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonred flex items-center justify-center order-2">
                                 <i class="fas fa-boxes text-neonred"></i>
                             </div>
-                            
+
                             <div class="hidden md:block md:w-1/2 md:pl-12 order-3 md:order-3">
                                 <h3 class="text-xl font-semibold mb-2">Auto Pratense</h3>
                                 <p class="text-neonred font-medium">Almoxarife</p>
@@ -288,7 +328,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Experience 3 - Experiência atual -->
                     <div class="relative">
                         <div class="flex flex-col md:flex-row items-start md:items-center">
@@ -296,31 +336,37 @@
                             <div class="md:hidden w-full pl-16">
                                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover mb-4">
                                     <h3 class="text-lg font-semibold mb-2">Antonio Meneghetti Faculdade</h3>
-                                    <p class="text-neonpurple font-medium mb-2 text-sm">Gestão de Indicadores & Dev Sales (Representante de Desenvolvimento de Vendas)</p>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">Março de 2025 – Presente</p>
+                                    <p class="text-neonpurple font-medium mb-2 text-sm">Gestão de Indicadores & Dev
+                                        Sales (Representante de Desenvolvimento de Vendas)</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-1">Março de 2025 – Presente
+                                    </p>
                                     <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Restinga Sêca, RS</p>
                                     <p class="text-gray-600 dark:text-gray-400 text-sm">
-                                        Estágio focado na gestão e análise de indicadores institucionais e desenvolvimento de vendas.
+                                        Estágio focado na gestão e análise de indicadores institucionais e
+                                        desenvolvimento de vendas.
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <!-- Desktop Layout -->
                             <div class="hidden md:block md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
                                 <h3 class="text-xl font-semibold mb-2">Antonio Meneghetti Faculdade</h3>
-                                <p class="text-neonpurple font-medium">Gestão de Indicadores & Dev Sales (Representante de Desenvolvimento de Vendas)</p>
+                                <p class="text-neonpurple font-medium">Gestão de Indicadores & Dev Sales (Representante
+                                    de Desenvolvimento de Vendas)</p>
                                 <p class="text-gray-600 dark:text-gray-400">Março de 2025 – Presente</p>
                                 <p class="text-gray-600 dark:text-gray-400">Restinga Sêca, RS</p>
                             </div>
-                            
-                            <div class="absolute left-1 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonpurple flex items-center justify-center">
+
+                            <div
+                                class="absolute left-1 md:left-1/2 transform md:translate-x-[-50%] w-10 h-10 rounded-full bg-white dark:bg-gray-800 border-4 border-neonpurple flex items-center justify-center">
                                 <i class="fas fa-briefcase text-neonpurple"></i>
                             </div>
-                            
+
                             <div class="hidden md:block md:w-1/2 md:pl-12">
                                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md card-hover">
                                     <p class="text-gray-600 dark:text-gray-400">
-                                        Estágio focado na gestão e análise de indicadores institucionais e desenvolvimento de vendas.
+                                        Estágio focado na gestão e análise de indicadores institucionais e
+                                        desenvolvimento de vendas.
                                     </p>
                                 </div>
                             </div>
@@ -335,16 +381,19 @@
     <section id="formacao" class="py-20 bg-gray-100 dark:bg-gray-900">
         <div class="container mx-auto px-4 section-fade">
             <h2 class="text-3xl font-bold text-center mb-16">Formação Acadêmica</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Education 1 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
-                    <div class="h-24 bg-gradient-to-r from-neonpurple to-neonred flex items-center justify-center relative overflow-hidden">
-                        <img src="images/LogoAMF.png" alt="Logo Antonio Meneghetti Faculdade" class="w-full h-full object-cover">
+                    <div
+                        class="h-24 bg-gradient-to-r from-neonpurple to-neonred flex items-center justify-center relative overflow-hidden">
+                        <img src="images/LogoAMF.png" alt="Logo Antonio Meneghetti Faculdade"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Antonio Meneghetti Faculdade</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">Bacharelado em Tecnologia da Informação/Sistemas de Informação</p>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Bacharelado em Tecnologia da
+                            Informação/Sistemas de Informação</p>
                         <div class="flex items-center text-gray-500 dark:text-gray-400">
                             <i class="far fa-calendar-alt mr-2"></i>
                             <span>Janeiro de 2025 - Cursando (2° semestre)</span>
@@ -357,11 +406,13 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Education 2 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
-                    <div class="h-24 bg-gradient-to-r from-neonred to-neonpurple flex items-center justify-center relative overflow-hidden">
-                        <img src="images/LogoOsvaldo.jpg" alt="Logo Escola Osvaldo Cruz" class="w-full h-full object-cover">
+                    <div
+                        class="h-24 bg-gradient-to-r from-neonred to-neonpurple flex items-center justify-center relative overflow-hidden">
+                        <img src="images/LogoOsvaldo.jpg" alt="Logo Escola Osvaldo Cruz"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">I.E.E Osvaldo Cruz</h3>
@@ -380,11 +431,14 @@
     <section id="projetos" class="py-20">
         <div class="container mx-auto px-4 section-fade">
             <h2 class="text-3xl font-bold text-center mb-16">Projetos</h2>
-            
+
+            <!-- grid: todos os cards DENTRO desta grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
                 <!-- Project 1 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
-                    <div class="h-40 bg-gradient-to-br from-neonpurple to-neonred flex items-center justify-center relative overflow-hidden">
+                    <div
+                        class="h-40 bg-gradient-to-br from-neonpurple to-neonred flex items-center justify-center relative overflow-hidden">
                         <img src="images/LogoZion.png" alt="Logo ZION" class="w-full h-full object-cover">
                         <div class="absolute inset-0 flex items-center justify-center">
                             <h3 class="text-3xl font-bold text-white drop-shadow-lg">ZION 0.5v</h3>
@@ -396,26 +450,32 @@
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-4">
                             <div class="flex space-x-2">
-                                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-xs font-medium">IA</span>
-                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">Python</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-xs font-medium">IA</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">Python</span>
                             </div>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-6">
-                            Projeto de inteligência artificial com foco em processamento de linguagem natural e assistência virtual.
+                            Projeto de inteligência artificial com foco em processamento de linguagem natural e
+                            assistência virtual.
                         </p>
                         <div class="flex justify-between items-center">
-                            <a href="https://github.com/ViniciusZanonato/ZION" target="_blank" class="text-neonpurple hover:text-neonred transition flex items-center">
+                            <a href="https://github.com/ViniciusZanonato/ZION" target="_blank"
+                                class="text-neonpurple hover:text-neonred transition flex items-center">
                                 <span>Ver no GitHub</span>
                                 <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Project 2 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
-                    <div class="h-40 bg-gradient-to-br from-neonred to-neonpurple flex items-center justify-center relative overflow-hidden">
-                        <img src="images/LogoNeuroLearnDark.png" alt="Logo NeuroLearn" class="w-full h-full object-cover">
+                    <div
+                        class="h-40 bg-gradient-to-br from-neonred to-neonpurple flex items-center justify-center relative overflow-hidden">
+                        <img src="images/LogoNeuroLearnDark.png" alt="Logo NeuroLearn"
+                            class="w-full h-full object-cover">
                         <div class="absolute inset-0 flex items-center justify-center">
                             <h3 class="text-3xl font-bold text-white drop-shadow-lg">NeuroLearn</h3>
                         </div>
@@ -426,37 +486,36 @@
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-4">
                             <div class="flex space-x-2">
-                                <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-xs font-medium">Educação</span>
-                                <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 rounded-full text-xs font-medium">JavaScript</span>
+                                <span
+                                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-xs font-medium">Educação</span>
+                                <span
+                                    class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 rounded-full text-xs font-medium">JavaScript</span>
                             </div>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-6">
-                            Plataforma de aprendizado com foco em neurociência e técnicas de estudo eficientes para estudantes.
+                            Plataforma de aprendizado com foco em neurociência e técnicas de estudo eficientes para
+                            estudantes.
                         </p>
                         <div class="flex justify-between items-center">
-                            <a href="https://github.com/ViniciusZanonato/25-control-amizade" target="_blank" class="text-neonpurple hover:text-neonred transition flex items-center">
+                            <a href="https://github.com/ViniciusZanonato/25-control-amizade" target="_blank"
+                                class="text-neonpurple hover:text-neonred transition flex items-center">
                                 <span>Ver no GitHub</span>
                                 <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="mt-12 text-center">
-                <a href="https://github.com/ViniciusZanonato" target="_blank" class="inline-flex items-center px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full transition">
-                    <i class="fab fa-github mr-2"></i>
-                    <span>Ver mais projetos no GitHub</span>
-                </a>
-            </div>
-        </div>
-        
-          <!-- Project 3 -->
+
+                <!-- Project 3 (ENLAÇADOS) -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden card-hover">
-                    <div class="h-40 bg-gradient-to-br from-neonpurple to-neonred flex items-center justify-center relative overflow-hidden">
-                        <img src="images/enlaçados.jpeg" alt="Logo Enlaçados" class="w-full h-full object-cover">
+                    <div
+                        class="h-40 bg-gradient-to-br from-neonpurple to-neonred flex items-center justify-center relative overflow-hidden">
+                        <!-- renomeie o arquivo para SEM acento: images/enlacados.jpeg -->
+                        <img src="images/enlacados.jpeg" alt="Logo Enlaçados" class="w-full h-full object-cover">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <h3 class="text-3xl font-bold text-white drop-shadow-lg">Enlaçados - Ecosistema Educacional</h3>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white drop-shadow-lg text-center px-4">
+                                Enlaçados — Ecossistema Educacional
+                            </h3>
                         </div>
                         <div class="absolute top-4 right-4">
                             <i class="fab fa-github text-white text-2xl drop-shadow-lg"></i>
@@ -465,28 +524,44 @@
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-4">
                             <div class="flex space-x-2">
-                                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-xs font-medium">IA</span>
-                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">Python</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-xs font-medium">Educação</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">Ecosistema</span>
+                                <span
+                                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-xs font-medium">IA</span>
                             </div>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-6">
-                            Projeto voltado para o auxilio na joranda educacional de pessoas de todas as idades.
+                            Projeto voltado ao auxílio na jornada educacional de pessoas de todas as idades.
                         </p>
                         <div class="flex justify-between items-center">
-                            <a href="https://github.com/ViniciusZanonato/EnlacadosPrototipo" target="_blank" class="text-neonpurple hover:text-neonred transition flex items-center">
+                            <a href="https://github.com/ViniciusZanonato/EnlacadosPrototipo" target="_blank"
+                                class="text-neonpurple hover:text-neonred transition flex items-center">
                                 <span>Ver no GitHub</span>
                                 <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
                     </div>
                 </div>
+
+            </div><!-- /grid -->
+
+            <div class="mt-12 text-center">
+                <a href="https://github.com/ViniciusZanonato" target="_blank"
+                    class="inline-flex items-center px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-full transition">
+                    <i class="fab fa-github mr-2"></i>
+                    <span>Ver mais projetos no GitHub</span>
+                </a>
+            </div>
+        </div><!-- /container -->
     </section>
 
     <!-- Courses Section -->
     <section id="cursos" class="py-20 bg-gray-100 dark:bg-gray-900">
         <div class="container mx-auto px-4 section-fade">
             <h2 class="text-3xl font-bold text-center mb-16">Cursos e Certificações</h2>
-            
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Course 1 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
@@ -500,7 +575,7 @@
                         <span>Análise de sequências genéticas</span>
                     </div>
                 </div>
-                
+
                 <!-- Course 2 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
                     <div class="text-neonpurple text-3xl mb-4">
@@ -513,7 +588,7 @@
                         <span>Técnicas laboratoriais e culturas microbianas</span>
                     </div>
                 </div>
-                
+
                 <!-- Course 3 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
                     <div class="text-neonpurple text-3xl mb-4">
@@ -526,7 +601,7 @@
                         <span>Ciclo viral e infecções humanas</span>
                     </div>
                 </div>
-                
+
                 <!-- Course 4 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
                     <div class="text-neonpurple text-3xl mb-4">
@@ -539,7 +614,7 @@
                         <span>CRISPR e edição de genes</span>
                     </div>
                 </div>
-                
+
                 <!-- Course 5 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
                     <div class="text-neonpurple text-3xl mb-4">
@@ -552,7 +627,7 @@
                         <span>Conceitos, aplicações e ética</span>
                     </div>
                 </div>
-                
+
                 <!-- Course 6 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
                     <div class="text-neonpurple text-3xl mb-4">
@@ -565,7 +640,7 @@
                         <span>Desenvolvimento Web</span>
                     </div>
                 </div>
-                
+
                 <!-- Course 7 -->
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover">
                     <div class="text-neonpurple text-3xl mb-4">
@@ -578,9 +653,11 @@
                         <span>Programação</span>
                     </div>
                 </div>
-                
+
                 <!-- Certificado: Administrador de Sistemas Pipefy -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card" data-cert-image="images/Certificado_Administrador_de_Sistemas_Pipefy.png" data-cert-title="Administrador de Sistemas Pipefy">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card"
+                    data-cert-image="images/Certificado_Administrador_de_Sistemas_Pipefy.png"
+                    data-cert-title="Administrador de Sistemas Pipefy">
                     <div class="text-neonpurple text-3xl mb-4">
                         <i class="fas fa-certificate"></i>
                     </div>
@@ -594,7 +671,9 @@
                 </div>
 
                 <!-- Certificado: Conectando Processos com Pipefy -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card" data-cert-image="images/Certificado_Conectando_Processos_com_Pipefy.png" data-cert-title="Conectando Processos com Pipefy">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card"
+                    data-cert-image="images/Certificado_Conectando_Processos_com_Pipefy.png"
+                    data-cert-title="Conectando Processos com Pipefy">
                     <div class="text-neonpurple text-3xl mb-4">
                         <i class="fas fa-certificate"></i>
                     </div>
@@ -608,7 +687,9 @@
                 </div>
 
                 <!-- Certificado: CRM de Vendas Pipefy -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card" data-cert-image="images/Certificado_CRM_de_Vendas_Pipefy.png" data-cert-title="CRM de Vendas Pipefy">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card"
+                    data-cert-image="images/Certificado_CRM_de_Vendas_Pipefy.png"
+                    data-cert-title="CRM de Vendas Pipefy">
                     <div class="text-neonpurple text-3xl mb-4">
                         <i class="fas fa-certificate"></i>
                     </div>
@@ -622,7 +703,9 @@
                 </div>
 
                 <!-- Certificado: Expo NovaTech -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card" data-cert-image="images/Certificado_De_Presen_U00e7a_Expo_NovaTech.png" data-cert-title="Expo NovaTech">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card"
+                    data-cert-image="images/Certificado_De_Presen_U00e7a_Expo_NovaTech.png"
+                    data-cert-title="Expo NovaTech">
                     <div class="text-neonpurple text-3xl mb-4">
                         <i class="fas fa-certificate"></i>
                     </div>
@@ -636,7 +719,9 @@
                 </div>
 
                 <!-- Certificado: Masterclass Interface de Usuário -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card" data-cert-image="images/Certificado_Masterclass_Interface_de_Usu_U00e1rio.png" data-cert-title="Masterclass Interface de Usuário">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 card-hover overflow-hidden group cert-card"
+                    data-cert-image="images/Certificado_Masterclass_Interface_de_Usu_U00e1rio.png"
+                    data-cert-title="Masterclass Interface de Usuário">
                     <div class="text-neonpurple text-3xl mb-4">
                         <i class="fas fa-certificate"></i>
                     </div>
@@ -656,12 +741,13 @@
     <section id="contato" class="py-20">
         <div class="container mx-auto px-4 section-fade">
             <h2 class="text-3xl font-bold text-center mb-16">Entre em Contato</h2>
-            
+
             <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
                 <div class="md:flex">
-                    <div class="md:w-1/3 bg-gradient-to-br from-neonpurple to-neonred p-8 text-white flex flex-col items-center justify-center">
+                    <div
+                        class="md:w-1/3 bg-gradient-to-br from-neonpurple to-neonred p-8 text-white flex flex-col items-center justify-center">
                         <h3 class="text-2xl font-semibold mb-6 text-center">Informações de Contato</h3>
-                        
+
                         <div class="space-y-6 w-full">
                             <div class="flex items-center justify-center">
                                 <div class="mr-4 text-2xl">
@@ -669,10 +755,11 @@
                                 </div>
                                 <div class="text-center">
                                     <h4 class="font-medium">Email</h4>
-                                    <a href="mailto:viniciuszanona@gmail.com" class="text-white hover:text-gray-200 transition break-all">viniciuszanona@gmail.com</a>
+                                    <a href="mailto:viniciuszanona@gmail.com"
+                                        class="text-white hover:text-gray-200 transition break-all">viniciuszanona@gmail.com</a>
                                 </div>
                             </div>
-                            
+
                             <div class="flex items-center justify-center">
                                 <div class="mr-4 text-2xl">
                                     <i class="fas fa-map-marker-alt"></i>
@@ -682,54 +769,69 @@
                                     <p>Restinga Sêca, RS, Brasil</p>
                                 </div>
                             </div>
-                            
+
                             <div class="flex items-center justify-center">
                                 <div class="mr-4 text-2xl">
                                     <i class="fab fa-linkedin"></i>
                                 </div>
                                 <div class="text-center">
                                     <h4 class="font-medium">LinkedIn</h4>
-                                    <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-white hover:text-gray-200 transition">Perfil LinkedIn</a>
+                                    <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346"
+                                        target="_blank" class="text-white hover:text-gray-200 transition">Perfil
+                                        LinkedIn</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="md:w-2/3 p-8">
                         <h3 class="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
-                        
+
                         <form id="contact-form" class="space-y-6">
                             <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nome</label>
-                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required>
+                                <label for="name"
+                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nome</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                                    required>
                             </div>
-                            
+
                             <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
-                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required>
+                                <label for="email"
+                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                                    required>
                             </div>
-                            
+
                             <div>
-                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Assunto</label>
-                                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required>
+                                <label for="subject"
+                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Assunto</label>
+                                <input type="text" id="subject" name="subject"
+                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                                    required>
                             </div>
-                            
+
                             <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Mensagem</label>
-                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white" required></textarea>
+                                <label for="message"
+                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Mensagem</label>
+                                <textarea id="message" name="message" rows="4"
+                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-neonpurple focus:border-neonpurple bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                                    required></textarea>
                             </div>
-                            
+
                             <div>
-                                <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-neonpurple to-neonred text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                                <button type="submit"
+                                    class="w-full px-6 py-3 bg-gradient-to-r from-neonpurple to-neonred text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
                                     Enviar Mensagem
                                 </button>
                             </div>
                         </form>
-                        
+
                         <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
                             Mensagem enviada com sucesso! Entraremos em contato em breve.
                         </div>
-                        
+
                         <div id="form-error" class="hidden mt-4 p-4 bg-red-100 text-red-700 rounded-lg">
                             Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.
                         </div>
@@ -747,7 +849,7 @@
                     <h2 class="text-2xl font-bold gradient-text mb-2">Carlos Vinicius Garcia Zanonato</h2>
                     <p class="text-gray-400">Estudante de Sistemas de Informação & Pesquisador</p>
                 </div>
-                
+
                 <div class="flex flex-col items-center md:items-end">
                     <div class="flex space-x-4 mb-4">
                         <a href="#inicio" class="hover:text-neonpurple transition">Início</a>
@@ -756,18 +858,21 @@
                         <a href="#projetos" class="hover:text-neonpurple transition">Projetos</a>
                         <a href="#contato" class="hover:text-neonpurple transition">Contato</a>
                     </div>
-                    
+
                     <div class="flex space-x-4 mb-4">
-                        <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank" class="text-gray-400 hover:text-neonpurple transition">
+                        <a href="https://www.linkedin.com/in/carlos-vinicius-garcia-zanonato-453832346" target="_blank"
+                            class="text-gray-400 hover:text-neonpurple transition">
                             <i class="fab fa-linkedin text-xl"></i>
                         </a>
-                        <a href="https://github.com/ViniciusZanonato" target="_blank" class="text-gray-400 hover:text-neonpurple transition">
+                        <a href="https://github.com/ViniciusZanonato" target="_blank"
+                            class="text-gray-400 hover:text-neonpurple transition">
                             <i class="fab fa-github text-xl"></i>
                         </a>
                     </div>
-                    
+
                     <p class="text-gray-400 text-sm">
-                        &copy; <span id="current-year"></span> Carlos Vinicius Garcia Zanonato. Todos os direitos reservados.
+                        &copy; <span id="current-year"></span> Carlos Vinicius Garcia Zanonato. Todos os direitos
+                        reservados.
                     </p>
                 </div>
             </div>
@@ -775,14 +880,17 @@
     </footer>
 
     <!-- Back to top button -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 p-3 bg-neonpurple text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-opacity-90">
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 p-3 bg-neonpurple text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-opacity-90">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Certificate Modal -->
-    <div id="certificate-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50 hidden">
+    <div id="certificate-modal"
+        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50 hidden">
         <div class="relative bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl max-w-4xl max-h-[90vh] overflow-auto">
-            <button id="close-modal" class="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">&times;</button>
+            <button id="close-modal"
+                class="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">&times;</button>
             <img id="certificate-modal-image" src="" alt="" class="max-w-full max-h-[80vh] object-contain mx-auto">
         </div>
     </div>
@@ -791,33 +899,33 @@
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         // Dark mode is always enabled (no toggle needed)
-        
+
         // Scroll animation
         const sections = document.querySelectorAll('.section-fade');
-        
+
         const fadeInOnScroll = () => {
             sections.forEach(section => {
                 const sectionTop = section.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
-                
+
                 if (sectionTop < windowHeight * 0.85) {
                     section.classList.add('visible');
                 }
             });
         };
-        
+
         window.addEventListener('scroll', fadeInOnScroll);
         window.addEventListener('load', fadeInOnScroll);
-        
+
         // Back to top button
         const backToTopButton = document.getElementById('back-to-top');
-        
+
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.remove('opacity-0', 'invisible');
@@ -827,39 +935,39 @@
                 backToTopButton.classList.add('opacity-0', 'invisible');
             }
         });
-        
+
         backToTopButton.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
         });
-        
+
         // Contact form with EmailJS
         const contactForm = document.getElementById('contact-form');
         const formSuccess = document.getElementById('form-success');
         const formError = document.getElementById('form-error');
         const submitButton = contactForm.querySelector('button[type="submit"]');
-        
+
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             // Hide any previous messages
             formSuccess.classList.add('hidden');
             formError.classList.add('hidden');
-            
+
             // Change button state
             const originalButtonText = submitButton.textContent;
             submitButton.textContent = 'Enviando...';
             submitButton.disabled = true;
-            
+
             // Get form data
             const formData = new FormData(contactForm);
             const name = formData.get('name');
             const email = formData.get('email');
             const subject = formData.get('subject');
             const message = formData.get('message');
-            
+
             try {
                 // Envia os dados do formulário para a API do formsubmit.co para enviar o email diretamente do site
                 const response = await fetch('https://formsubmit.co/ajax/viniciuszanona@gmail.com', {
@@ -904,24 +1012,24 @@
                 submitButton.disabled = false;
             }
         });
-        
+
         // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
-        
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80, // Adjust for fixed header
                         behavior: 'smooth'
                     });
-                    
+
                     // Close mobile menu if open
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
@@ -959,6 +1067,5 @@
         });
     </script>
 </body>
+
 </html>
-
-
