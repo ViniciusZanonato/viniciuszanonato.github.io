@@ -1,0 +1,5 @@
+.swarm/
+ruvector.db
+*.db
+*.db-shm
+*.db-wal
